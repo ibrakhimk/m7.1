@@ -8,17 +8,17 @@ class GetAllNotesUseCase(private val noteRepository: NoteRepository) {
     fun getAllNotes() = noteRepository.getAllNotes()
 
     //    fun createNotes() = noteRepository.createNote()
-    fun createNotes(note: Note) {
-        noteRepository.createNote(note)
-    }
+//    fun createNotes(note: Note) {
+//        noteRepository.createNote(note)
+//    }
 
-    fun deleteNotes(note: Note) {
-        noteRepository.deleteNote(note)
-    }
+//    fun deleteNotes(note: Note) {
+//        noteRepository.deleteNote(note)
+//    }
 
-    fun updateNote(note: Note){
-        noteRepository.updateNote(note)
-    }
+//    fun updateNote(note: Note){
+//        noteRepository.updateNote(note)
+//    }
 
 
 }
