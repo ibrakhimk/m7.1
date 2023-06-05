@@ -5,8 +5,9 @@ import com.example.m71.data.mappers.toEntity
 import com.example.m71.data.mappers.toNote
 import com.example.m71.domain.model.Note
 import com.example.m71.domain.repository.NoteRepository
+import javax.inject.Inject
 
-class NoteRepositoryImpl(private val noteDao: NoteDao) : NoteRepository {
+class NoteRepositoryImpl @Inject constructor(private val noteDao: NoteDao) : NoteRepository {
 
     override fun getAllNotes(): List<Note> {
         return noteDao.getAllNotes().map { it.toNote()}
